@@ -13,3 +13,20 @@ print("Welcome to the PassWord Generator!")
 no_letter = int(input("How many Letters would you like in your Password?\n"))
 no_symbols = int(input("How many Symbols would you like in your Password?\n"))
 no_numbers = int(input("How many Numbers would you like in your Password?\n"))
+
+#Easy
+password = "" 
+
+for char in range(1,no_letter+1):
+    random_letter = random.choice(letters)
+    password += random_letter
+
+for sym in range(1,no_symbols+1):
+    random_symbols = random.choice(symbols)
+    password += random_symbols
+
+for char in range(1,no_numbers+1):
+    random_numbers = random.choice(numbers)
+    password += random_numbers
+
+print(password, end = "")
