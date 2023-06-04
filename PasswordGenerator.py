@@ -30,3 +30,26 @@ for char in range(1,no_numbers+1):
     password += random_numbers
 
 print(password, end = "")
+
+#HARD
+
+password_list = []
+
+for char in range(1,no_letter+1):
+    random_letter = random.choice(letters)
+    password_list += random_letter
+
+for sym in range(1,no_symbols+1):
+    random_symbols = random.choice(symbols)
+    password_list += random_symbols
+
+for char in range(1,no_numbers+1):
+    random_numbers = random.choice(numbers)
+    password_list += random_numbers
+
+random.shuffle(password_list)
+result = ""
+for i in password_list:
+    result+=i 
+
+print(f"Your Password is : {result}")
