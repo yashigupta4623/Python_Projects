@@ -1,7 +1,14 @@
+# HOW TO ADD IMAGE ? 
 import turtle
-screen = turtle.Screen()
+tr = turtle.Turtle()
+wn = turtle.Screen()
+wn.addshape('python2.gif')
+tr.shape('python2.gif')
+wn.mainloop()
 
-image = r"C:\Users\myUser\Desktop\Python\rocketship.png" #path of the IMAGES
-
-screen.addshape(image)
-turtle.shape(image)
+# HOW TO ADD BACKGROUND IMAGE ? 
+import turtle
+tr = turtle.Turtle()
+wn = turtle.Screen()
+wn.bgpic("python1.gif")
+wn.mainloop()
