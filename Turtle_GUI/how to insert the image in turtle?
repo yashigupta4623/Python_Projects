@@ -1,1 +1,7 @@
+import turtle
+screen = turtle.Screen()
 
+image = r"C:\Users\myUser\Desktop\Python\rocketship.png" #path of the IMAGES
+
+screen.addshape(image)
+turtle.shape(image)
