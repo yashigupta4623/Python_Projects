@@ -15,5 +15,5 @@ while quiz.still_has_questions():
   quiz.next_question()
 
 print("You've completed the quiz.")
-print("Your final score was: {}/{}".)
+print("Your final score was: {self.score}/{self.question_number}".)
 
